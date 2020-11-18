@@ -1,0 +1,29 @@
+{
+  "name": "frontendmentor-social-proof",
+  "version": "1.0.0",
+  "description": "Design preview for the Social proof section coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "postcss src/tailwind.css -o public/global.css -w",
+    "build": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/global.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juank1791/frontendmentor-social-proof.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juank1791/frontendmentor-social-proof/issues"
+  },
+  "homepage": "https://github.com/juank1791/frontendmentor-social-proof#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^1.9.6"
+  }
+}
