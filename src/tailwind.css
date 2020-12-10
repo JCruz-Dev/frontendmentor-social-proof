@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply font-spartan;
+}
+.content-width {
+    @apply max-w-max-viewport-w;
+}
