@@ -12154,7 +12154,7 @@ video {
 }
 
 .max-w-max-viewport-w {
-  max-width: 1200px;
+  max-width: 1110px;
 }
 
 .min-h-0 {
@@ -19470,14 +19470,14 @@ main {
 }
 
 .content-width {
-  max-width: 1200px;
+  max-width: 1110px;
 }
 
 /* CARD */
 
 .card {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   margin-bottom: 1rem;
@@ -19628,22 +19628,23 @@ main {
   }
 
   .card {
-    width: 350px;
+    height: 234px;
+    position: relative;
   }
 
   .card:nth-child(2) {
-    margin-top: 1rem;
+    top: 1rem;
   }
 
   .card:nth-child(3) {
-    margin-top: 2rem;
+    top: 2rem;
   }
 
   .main-header {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 17px;
   }
 
   .main-header-title {
@@ -31290,7 +31291,7 @@ main {
   }
 
   .x-small\:max-w-max-viewport-w {
-    max-width: 1200px;
+    max-width: 1110px;
   }
 
   .x-small\:min-h-0 {
@@ -50140,7 +50141,7 @@ main {
   }
 
   .small\:max-w-max-viewport-w {
-    max-width: 1200px;
+    max-width: 1110px;
   }
 
   .small\:min-h-0 {
@@ -68990,7 +68991,7 @@ main {
   }
 
   .medium\:max-w-max-viewport-w {
-    max-width: 1200px;
+    max-width: 1110px;
   }
 
   .medium\:min-h-0 {
@@ -87840,7 +87841,7 @@ main {
   }
 
   .large\:max-w-max-viewport-w {
-    max-width: 1200px;
+    max-width: 1110px;
   }
 
   .large\:min-h-0 {
@@ -106690,7 +106691,7 @@ main {
   }
 
   .x-large\:max-w-max-viewport-w {
-    max-width: 1200px;
+    max-width: 1110px;
   }
 
   .x-large\:min-h-0 {
@@ -125540,7 +125541,7 @@ main {
   }
 
   .xx-large\:max-w-max-viewport-w {
-    max-width: 1200px;
+    max-width: 1110px;
   }
 
   .xx-large\:min-h-0 {
