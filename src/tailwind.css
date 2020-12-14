@@ -111,7 +111,7 @@ main {
     }
     .main-header {
         @apply flex-row justify-between text-left;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .main-header-title {
         @apply text-big;
