@@ -19473,6 +19473,12 @@ main {
   max-width: 1110px;
 }
 
+.star-icon {
+  width: 17px;
+  height: 16px;
+  background-image: url(../images/icon-star.svg);
+}
+
 /* CARD */
 
 .card {
@@ -19565,7 +19571,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.review-card > .stars-container svg {
+.review-card > .stars-container .star-icon {
   margin-right: 8px;
 }
 
@@ -19614,11 +19620,31 @@ main {
     background: url(./bg-pattern-top-desktop.svg) top left no-repeat,
             url(./bg-pattern-bottom-desktop.svg) bottom right no-repeat;
   }
+
+  .review-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .review-card {
+    height: auto;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+  }
 }
 
 @media (min-width: 64rem) {
-  .user-description {
-    width: 80%;
+  .main-header-description {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -19672,6 +19698,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    grid-template-columns: none;
+    grid-gap: 0;
+    gap: 0;
   }
 
   .review-content,
@@ -19709,7 +19738,7 @@ main {
   }
 
   .review-card-title {
-    margin-right: 60px;
+    margin-right: 50px;
   }
 }
 

@@ -15,6 +15,11 @@ main {
 .content-width {
     @apply max-w-max-viewport-w;
 }
+.star-icon {
+    width: 17px;
+    height: 16px;
+    background-image: url(../images/icon-star.svg);
+}
 /* CARD */
 .card {
     @apply px-6 py-10 mb-4 rounded-lg bg-dark-purple-400;
@@ -59,7 +64,7 @@ main {
 .review-card > .stars-container {
     @apply flex justify-center mb-4;
 }
-.review-card > .stars-container svg {
+.review-card > .stars-container .star-icon {
     margin-right: 8px;
 }
 .review-card > .stars-container svg:last-child {
@@ -89,10 +94,20 @@ main {
         background: url(./bg-pattern-top-desktop.svg) top left no-repeat,
             url(./bg-pattern-bottom-desktop.svg) bottom right no-repeat;
     }
+    .review-content {
+        @apply grid grid-cols-3 gap-6;
+    }
+    .review-card {
+        @apply h-auto;
+    }
+    main {
+        @apply grid grid-cols-3 gap-6;
+    }
 }
 @screen large {
-    .user-description {
-        width: 80%;
+    .main-header-description {
+        width: 70%;
+        @apply mx-auto;
     }
 }
 @screen x-large {
@@ -131,7 +146,7 @@ main {
         @apply mt-0;
     }
     .review-content {
-        @apply flex flex-col items-end;
+        @apply flex flex-col items-end grid-cols-none gap-0;
     }
     .review-content,
     .main-header-title {
@@ -157,6 +172,6 @@ main {
         right: 3rem;
     }
     .review-card-title {
-        margin-right: 60px;
+        margin-right: 50px;
     }
 }
