@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       maxWidth:{
-        "max-viewport-w":"1200px"
+        "max-viewport-w":"1110px"
       },
       colors:{
         "dark-purple": {
