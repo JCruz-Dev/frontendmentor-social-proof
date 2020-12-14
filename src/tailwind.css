@@ -18,7 +18,7 @@ main {
 .star-icon {
     width: 17px;
     height: 16px;
-    background-image: url(../public/icon-star.svg);
+    background-image: url(./icon-star.svg);
 }
 /* CARD */
 .card {
