@@ -17,7 +17,7 @@ main {
 }
 /* CARD */
 .card {
-    @apply px-8 py-10 mb-4 rounded-lg bg-dark-purple-400;
+    @apply px-6 py-10 mb-4 rounded-lg bg-dark-purple-400;
     transition: all 0.3s;
 }
 .card:hover {
@@ -100,17 +100,18 @@ main {
         width: 100%;
     }
     .card {
-        width: 350px;
+        height: 234px;
+        position: relative;
     }
     .card:nth-child(2) {
-        margin-top: 1rem;
+        top: 1rem;
     }
     .card:nth-child(3) {
-        margin-top: 2rem;
+        top: 2rem;
     }
     .main-header {
         @apply flex-row justify-between text-left;
-        margin-bottom: 30px;
+        margin-bottom: 17px;
     }
     .main-header-title {
         @apply text-big;
