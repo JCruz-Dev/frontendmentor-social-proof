@@ -17,13 +17,13 @@ module.exports = {
     },
     extend: {
       maxWidth:{
-        "max-viewport-w":"1110px"
+        "max-viewport-w":"1200px"
       },
       colors:{
         "dark-purple": {
           "100":"#F7F2F7",
           "200": "#927B91",
-          "300": "EE69A4",
+          "300": "#EE69A4",
           "400": "#512051"
 
         }
@@ -39,7 +39,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '2rem'
+      padding: '1.5rem'
     }
   },
   variants: {},
