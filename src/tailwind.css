@@ -3,8 +3,159 @@
 @tailwind utilities;
 
 body {
+    min-height: 100vh;
     @apply font-spartan;
+}
+main {
+    margin-bottom: 3rem;
+}
+.attribution {
+    margin-bottom: 1rem;
 }
 .content-width {
     @apply max-w-max-viewport-w;
+}
+/* CARD */
+.card {
+    @apply px-8 py-10 mb-4 rounded-lg bg-dark-purple-400;
+    transition: all 0.3s;
+}
+.card:hover {
+    background-color: #351535;
+}
+.user-profile {
+    @apply flex items-center;
+    margin-bottom: 1.625rem;
+}
+.user-profile img {
+    @apply rounded-full;
+    width: 40px;
+    height: 40px;
+    margin-right: 23px;
+}
+.user-name {
+    @apply font-bold text-white text-small;
+}
+.user-job {
+    @apply font-normal text-small text-dark-purple-300;
+}
+.user-description {
+    @apply font-normal text-white text-small;
+    line-height: 1.375rem;
+    letter-spacing: -0.23px;
+}
+/* REVIEW CARD */
+.review-content {
+    width: 100%;
+}
+.review-card {
+    @apply py-4 m-auto mb-4 text-center rounded-lg bg-dark-purple-100;
+    height: 78px;
+    width: 100%;
+}
+.review-card-title {
+    @apply font-bold text-small text-dark-purple-400;
+}
+.review-card > .stars-container {
+    @apply flex justify-center mb-4;
+}
+.review-card > .stars-container svg {
+    margin-right: 8px;
+}
+.review-card > .stars-container svg:last-child {
+    margin-right: 0;
+}
+
+@screen x-small {
+    body {
+        background: url(../images/bg-pattern-top-mobile.svg) top left no-repeat,
+            url(../images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    }
+    .main-header {
+        @apply flex flex-col justify-center text-center;
+        margin-bottom: 3.125rem;
+    }
+    .main-header-title {
+        @apply mt-20 font-bold leading-8 text-dark-purple-400 text-large;
+        margin-bottom: 1.125rem;
+    }
+    .main-header-description {
+        @apply mb-10 font-normal text-dark-purple-200 text-medium;
+        line-height: 1.5625rem;
+    }
+}
+@screen medium {
+    body {
+        background: url(../images/bg-pattern-top-desktop.svg) top left no-repeat,
+            url(../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+    }
+}
+@screen large {
+    .user-description {
+        width: 80%;
+    }
+}
+@screen x-large {
+    .user-description {
+        width: 100%;
+    }
+    .card {
+        width: 350px;
+    }
+    .card:nth-child(2) {
+        margin-top: 1rem;
+    }
+    .card:nth-child(3) {
+        margin-top: 2rem;
+    }
+    .main-header {
+        @apply flex-row justify-between text-left;
+        margin-bottom: 30px;
+    }
+    .main-header-title {
+        @apply text-big;
+        line-height: 48px;
+        letter-spacing: -1.71px;
+    }
+    .main-header-description,
+    .main-header-title {
+        width: 445px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    .main-header-title {
+        @apply mt-0;
+    }
+    .review-content {
+        @apply flex flex-col items-end;
+    }
+    .review-content,
+    .main-header-title {
+        margin-top: 127px;
+    }
+    .review-card > .stars-container {
+        @apply mb-0 ml-8 mr-8;
+    }
+    .review-card {
+        position: relative;
+        max-width: 445px;
+        height: 56px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-top: 1rem;
+        @apply flex flex-row items-center justify-center text-left;
+    }
+    .review-card:nth-child(1) {
+        right: 5.9375rem;
+    }
+    .review-card:nth-child(2) {
+        right: 3rem;
+    }
+    .review-card-title {
+        margin-right: 60px;
+    }
 }
