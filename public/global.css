@@ -19476,7 +19476,7 @@ main {
 .star-icon {
   width: 17px;
   height: 16px;
-  background-image: url(../images/icon-star.svg);
+  background-image: url(../public/icon-star.svg);
 }
 
 /* CARD */
